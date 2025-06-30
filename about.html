@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Gorav Soni</title>
+    <meta name="description" content="Learn more about Gorav Soni, a passionate frontend developer specializing in premium web experiences.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <a href="./index.html" class="brand-link">
+                    <span class="brand-text">Gorav Soni</span>
+                </a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="static-page">
+        <div class="container">
+            <div class="page-header" data-aos="fade-up">
+                <h1>About Gorav Soni</h1>
+                <p class="page-subtitle">Passionate Frontend Developer & Creative Problem Solver</p>
+            </div>
+
+            <div class="page-content">
+                <section class="content-section" data-aos="fade-up" data-aos-delay="100">
+                    <h2>My Journey</h2>
+                    <p>
+                        I'm Gorav Soni, a passionate frontend developer with a deep love for creating beautiful, 
+                        functional, and user-centered web experiences. My journey in web development began with 
+                        curiosity about how websites work and has evolved into a career focused on crafting 
+                        premium digital experiences.
+                    </p>
+                    <p>
+                        With over 3 years of experience in frontend development, I specialize in modern 
+                        JavaScript frameworks, responsive design, and creating smooth animations that enhance 
+                        user engagement without compromising performance.
+                    </p>
+                </section>
+
+                <section class="content-section" data-aos="fade-up" data-aos-delay="200">
+                    <h2>What I Do</h2>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Frontend Development</h3>
+                            <p>Building responsive, interactive web applications using modern technologies like React, Vue.js, and vanilla JavaScript.</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h3>UI/UX Design</h3>
+                            <p>Creating intuitive user interfaces and experiences that are both beautiful and functional.</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Responsive Design</h3>
+                            <p>Ensuring your website looks perfect and functions flawlessly across all devices and screen sizes.</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Performance Optimization</h3>
+                            <p>Optimizing websites for speed, accessibility, and search engine rankings.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section" data-aos="fade-up" data-aos-delay="300">
+                    <h2>My Philosophy</h2>
+                    <p>
+                        I believe that great web development is the perfect blend of art and science. Every project 
+                        should not only solve a problem but also provide a delightful experience for users. I'm 
+                        committed to writing clean, maintainable code while creating visually stunning interfaces 
+                        that users love to interact with.
+                    </p>
+                    <p>
+                        Continuous learning is at the core of my approach. The web development landscape evolves 
+                        rapidly, and I stay updated with the latest technologies, best practices, and design trends 
+                        to deliver cutting-edge solutions.
+                    </p>
+                </section>
+
+                <div class="page-cta" data-aos="fade-up" data-aos-delay="400">
+                    <a href="./index.html#contact" class="btn btn-primary btn-glow">
+                        <span>Let's Work Together</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gorav Soni. All rights reserved.</p>
+                <a href="./index.html" class="footer-home-link">← Back to Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/theme.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

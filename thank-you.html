@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Gorav Soni</title>
+    <meta name="description" content="Thank you for contacting Gorav Soni. Your message has been received successfully.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+    
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- AOS Library (optional for thank-you page) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Stylesheets (relative path is important!) -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+
+  <!-- JS (optional for animation or theme effects) -->
+  <script src="theme.js" defer></script>
+  <script src="animations.js" defer></script>
+  <script src="main.js" defer></script>
+    <style>
+        .thank-you-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .thank-you-content {
+            text-align: center;
+            max-width: 600px;
+            padding: var(--spacing-3xl);
+            background: var(--bg-primary);
+            border-radius: var(--border-radius-xl);
+            box-shadow: 0 20px 60px var(--shadow-medium);
+            border: 1px solid var(--border-color);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto var(--spacing-xl);
+            animation: successBounce 0.8s ease-out;
+        }
+        
+        .success-icon i {
+            font-size: var(--font-size-3xl);
+            color: white;
+        }
+        
+        @keyframes successBounce {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .thank-you-title {
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--spacing-lg);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .thank-you-message {
+            font-size: var(--font-size-lg);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-2xl);
+            line-height: 1.6;
+        }
+        
+        .thank-you-actions {
+            display: flex;
+            gap: var(--spacing-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-element:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .floating-element:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+        
+        .floating-element:nth-child(3) {
+            bottom: 30%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+        
+        .floating-element:nth-child(4) {
+            top: 40%;
+            right: 25%;
+            animation-delay: 1s;
+        }
+        
+        .floating-element:nth-child(5) {
+            bottom: 20%;
+            right: 10%;
+            animation-delay: 3s;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) scale(1);
+            }
+            50% {
+                transform: translateY(-20px) scale(1.1);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-content {
+                margin: var(--spacing-lg);
+                padding: var(--spacing-2xl);
+            }
+            
+            .thank-you-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-text">Gorav Soni</span>
+                </a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Thank You Page -->
+    <main class="thank-you-page">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="thank-you-content" data-aos="zoom-in" data-aos-duration="800">
+            <div class="success-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            
+            <h1 class="thank-you-title">Thank You!</h1>
+            
+            <p class="thank-you-message">
+                Your message has been sent successfully. I appreciate you taking the time to reach out, 
+                and I'll get back to you as soon as possible. Usually within 24 hours.
+            </p>
+            
+            <div class="thank-you-actions">
+                <a href="index.html" class="btn btn-primary btn-glow">
+                    <span>Back to Home</span>
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="index.html#projects" class="btn btn-secondary">
+                    <span>View My Work</span>
+                    <i class="fas fa-eye"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="theme.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+        
+        // Auto redirect to home after 10 seconds (optional)
+        setTimeout(() => {
+            const shouldRedirect = confirm('Would you like to return to the homepage?');
+            if (shouldRedirect) {
+                window.location.href = 'index.html';
+            }
+        }, 10000);
+    </script>
+</body>
+</html>

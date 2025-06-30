@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorav Soni-portfolio</title>
+    <meta name="description" content="Gorav Soni - Professional Frontend Developer specializing in modern web applications with premium animations and user experiences.">
+    
+  <!-- Favicon for Gorav Portfolio -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<!-- favicon.svg -->
+
+
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- AOS Library -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- CSS (Use correct relative paths) -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animations.css">
+
+<!-- JS (All scripts deferred and correct paths) -->
+<script src="theme.js" defer></script>
+<script src="animations.js" defer></script>
+<script src="main.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <p class="loader-text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">
+                    <span class="brand-text">Gorav Soni</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="hero-particles"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name" id="typed-name">Gorav Soni</span>
+                        </h1>
+                        <p class="hero-subtitle" id="typed-subtitle">Frontend Developer</p>
+                        <p class="hero-description">
+                            Crafting beautiful, interactive web experiences with cutting-edge technologies and premium animations.
+                        </p>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary btn-glow">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="image-container">
+                        <!-- Developer Image -->
+                        <img src="image.jpg.png" alt="Gorav Soni - Frontend Developer" class="developer-photo" />
+                        
+                        <div class="floating-elements">
+                            <div class="element element-1"><i class="fab fa-react"></i></div>
+                            <div class="element element-2"><i class="fab fa-js-square"></i></div>
+                            <div class="element element-3"><i class="fab fa-css3-alt"></i></div>
+                            <div class="element element-4"><i class="fab fa-html5"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate about creating exceptional digital experiences</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                        <p class="about-description">
+                            I'm a passionate frontend developer with a keen eye for design and a love for creating 
+                            smooth, interactive web experiences. With expertise in modern web technologies, I transform 
+                            ideas into beautiful, functional applications that users love to interact with.
+                        </p>
+                        <p class="about-description">
+                            My approach combines clean code, premium animations, and user-centered design to deliver 
+                            websites that not only look stunning but also provide exceptional performance and usability.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                                <span class="stat-number" data-count="50">0</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                <span class="stat-number" data-count="3">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                <span class="stat-number" data-count="25">0</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image" data-aos="fade-left" data-aos-duration="800">
+                        <div class="image-frame">
+                            <div class="code-snippet">
+                                <div class="code-header">
+                                    <div class="dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <span>developer.js</span>
+                                </div>
+                                <div class="code-content">
+                                    <pre><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">'Gorav Soni'</span>,
+  <span class="property">passion</span>: <span class="string">'Frontend Development'</span>,
+  <span class="property">skills</span>: [<span class="string">'html'</span>, <span class="string">'JavaScript'</span>, <span class="string">'CSS'</span>],
+  <span class="property">mission</span>: <span class="string">'Create Amazing UX'</span>
+};</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technologies I work with to create amazing experiences</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="category-title">Frontend Technologies</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5/CSS3</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">responsiveness</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="category-title">Design & Animation</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">CSS Animations</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percentage">93%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="93"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Showcasing my best work and creative solutions</p>
+                </div>
+              <div class="projects-grid">
+
+  <!-- Project 1 -->
+  <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+    <div class="project-image">
+      <img src="projecttumbnail.png" alt="Gorav Soni Jewelers Project" class="project-thumbnail">
+      <div class="project-overlay">
+        <div class="project-links">
+          <a href="https://goravsonijewelers.netlify.app" class="project-link" aria-label="View Live Demo" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="https://github.com/goravkumar5657/Gorav-Soni-jeweler-s" class="project-link" aria-label="View Source Code" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="project-content">
+      <h3 class="project-title">Gorav Soni Jewelers</h3>
+      <p class="project-description">
+        A responsive jewelry website crafted with HTML, CSS, and JavaScript. Features include elegant UI design, smooth animations, mobile responsiveness, and interactive navigation for an engaging user experience.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">HTML5</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Responsive Design</span>
+        <span class="tech-tag">CSS Animations</span>
+      </div>
+      <a href="https://goravsonijewelers.netlify.app" class="project-cta" target="_blank">
+        <span>View Project</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+    <div class="project-image">
+      <img src="projecttumbnail2.png" alt="ShahhStore Project" class="project-thumbnail">
+      <div class="project-overlay">
+        <div class="project-links">
+          <a href="https://shahhstore.netlify.app" class="project-link" aria-label="View Live Demo" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="https://github.com/goravkumar5657/Shah" class="project-link" aria-label="View Source Code" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="project-content">
+      <h3 class="project-title">ShahhStore – Ladies Clothing Website</h3>
+      <p class="project-description">
+        A modern, responsive online store focused on ladies' fashion. The website showcases various clothing brands with elegant product cards, pricing, and category layout. Built using HTML, CSS, and JavaScript, it offers a clean design, smooth animations, and mobile-friendly user experience.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">HTML5</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Responsive Design</span>
+        <span class="tech-tag">CSS Animations</span>
+      </div>
+      <a href="https://shahhstore.netlify.app" class="project-cta" target="_blank">
+        <span>View Project</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+    <div class="project-image">
+      <img src="projecttumbnail3.png" alt="EducationSphere Project" class="project-thumbnail">
+      <div class="project-overlay">
+        <div class="project-links">
+          <a href="https://educationsphere.netlify.app" class="project-link" aria-label="View Live Demo" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+          <a href="https://github.com/sachink83341/educationsphere" class="project-link" aria-label="View Source Code" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="project-content">
+      <h3 class="project-title">EducationSphere</h3>
+      <p class="project-description">
+        A complete educational platform designed for students of Class 9 to Class 12. The website provides subject-wise notes including English, Science, Maths, SST, and in-depth Grammar topics like Tenses, Modals, Letters, and Essays — all explained with examples. Built with HTML, CSS, and JavaScript, it delivers a mobile-responsive, fast-loading experience.
+      </p>
+      <div class="project-tech">
+        <span class="tech-tag">HTML5</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Responsive Design</span>
+        <span class="tech-tag">Educational Platform</span>
+      </div>
+      <a href="https://educationsphere.netlify.app" class="project-cta" target="_blank">
+        <span>View Project</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+
+</div> <!-- END of .projects-grid -->
+
+                
+                <div class="projects-cta" data-aos="fade-up" data-aos-delay="400">
+                    <p>Want to see more of my work?</p>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Let's Discuss Your Project</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="section-subtitle">Ready to bring your ideas to life? Let's create something amazing together!</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email Me</h3>
+                                <p>gk1565558@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Call Me</h3>
+                                <p>+92-3173183159</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Umerkot, Sindh, Pakistan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/gorav-kumar-a50424293/" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/goravkumar5657" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram/in/gorav_kumar5657.com/" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+          <form class="contact-form" action="https://formsubmit.co/gk1565558@gmail.com" method="POST">
+
+                        <input type="hidden" name="_next" value="thank-you.html">
+                        
+                        <!-- FormSubmit Configuration -->
+
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or how I can help you..."></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-glow form-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Gorav Soni</h3>
+                    <p class="footer-description">
+                        Premium Frontend Developer creating beautiful, interactive web experiences.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/gorav-kumar-a50424293/" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/goravkumar5657" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">Frontend Consulting</a></li>
+                        <li><a href="services.html">Performance Optimization</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gorav Soni. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and lots of <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
