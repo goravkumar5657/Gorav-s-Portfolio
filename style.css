@@ -6,6 +6,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 /* CSS Custom Properties */
 :root {
@@ -120,6 +130,10 @@ body {
     .container {
         padding: 0 var(--spacing-xl);
     }
+    
+  .hero h1, .hero p {
+    text-align: center;
+  }
 }
 
 /* Typography */
@@ -180,7 +194,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     z-index: var(--z-modal);
-    transition: opacity var(--transition-slow), visibility var(--transition-slow);
+    transition: opacity var(--transition-slow), visibility var(--transition-fast);
 }
 
 #page-loader.hidden {
@@ -251,13 +265,13 @@ a:hover {
     list-style: none;
     gap: var(--spacing-xl);
 }
-
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
         top: 70px;
         left: -100%;
         width: 100%;
+        max-width: 100vw;
         height: calc(100vh - 70px);
         background: var(--bg-primary);
         flex-direction: column;
@@ -265,12 +279,20 @@ a:hover {
         align-items: center;
         padding-top: var(--spacing-3xl);
         transition: left var(--transition-normal);
+        z-index: 9998;
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
+
+    .nav-menu li {
+        margin-bottom: var(--spacing-lg);
+        width: 100%;
+        text-align: center;
+    }
 }
+
 
 .nav-link {
     position: relative;
